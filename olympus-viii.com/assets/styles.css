@@ -10,6 +10,9 @@
 }
 
 * { box-sizing: border-box; }
+.feature-image.guild-screenshot { align-self: center; }
+.feature-image.guild-screenshot img { aspect-ratio: auto; height: auto; object-fit: contain; filter: none; }
+.feature-image.guild-screenshot figcaption { position: static; padding: 12px; line-height: 1.5; }
 .construction-notice { max-width: 640px; margin: 0 0 1.75rem; padding: .85rem 1rem; border: 1px solid rgba(199,155,80,.65); border-left: 3px solid var(--gold); background: rgba(32,21,15,.88); color: #f3e5c3; font-size: 1rem; line-height: 1.5; }
 .hero-content { padding-bottom: 2rem; }
 @media (max-width: 760px) { .hero .hero-content { padding-top: 100px; } }
