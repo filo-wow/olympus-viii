@@ -11,18 +11,16 @@ This is currently a static website built with HTML, CSS, and vanilla JavaScript.
 A backend will be chosen later if the site needs one. These contribution guidelines will be updated when that decision is made. Until then, contributions should work within the existing static setup.
 
 ```text
-dist/
+olympus-viii.com/
   index.html                 Page structure, metadata, and fallback copy
   assets/
     guild-content.js         Editable page copy, Discord URL, and roster
     site.js                  Applies content and renders the roster
     styles.css               Shared styling and responsive layout
     *.jpg / *.png            Site screenshots and images
-.openai/
-  hosting.json               Existing Sites hosting configuration
 ```
 
-Despite its name, `dist/` contains the authored site files. Edit these files directly; there is no generated build output to recreate.
+`olympus-viii.com/` contains the authored site files. Edit these files directly; there is no generated build output to recreate.
 
 ## Preview locally
 
@@ -36,11 +34,11 @@ Open <http://localhost:4173> in your browser. Stop the server with `Ctrl+C`. Pyt
 
 ## Editing content
 
-- **Page copy, roster, and Discord link:** edit `dist/assets/guild-content.js`. Keep roster names and ranks accurate.
-- **Page structure and metadata:** edit `dist/index.html`. When changing existing copy, also update its HTML fallback so the initial page and JavaScript-rendered content agree. Update the title and description when relevant.
-- **Styling:** edit `dist/assets/styles.css` and preserve the existing brown, parchment, and bronze theme.
-- **Browser behavior:** edit `dist/assets/site.js`, keeping it compatible with the current plain JavaScript setup.
-- **Images:** add appropriately sized files to `dist/assets/`, use descriptive filenames and alt text, and set accurate image dimensions in HTML. Use images you have permission to share and identify their source in your PR. Do not describe community screenshots as Olympus VIII events unless that is accurate.
+- **Page copy, roster, and Discord link:** edit `olympus-viii.com/assets/guild-content.js`. Keep roster names and ranks accurate.
+- **Page structure and metadata:** edit `olympus-viii.com/index.html`. When changing existing copy, also update its HTML fallback so the initial page and JavaScript-rendered content agree. Update the title and description when relevant.
+- **Styling:** edit `olympus-viii.com/assets/styles.css` and preserve the existing brown, parchment, and bronze theme.
+- **Browser behavior:** edit `olympus-viii.com/assets/site.js`, keeping it compatible with the current plain JavaScript setup.
+- **Images:** add appropriately sized files to `olympus-viii.com/assets/`, use descriptive filenames and alt text, and set accurate image dimensions in HTML. Use images you have permission to share and identify their source in your PR. Do not describe community screenshots as Olympus VIII events unless that is accurate.
 
 ## Contributing
 
@@ -71,8 +69,8 @@ Guild members are welcome to contribute. **All proposed changes must be submitte
 - If you edited JavaScript and have Node.js installed, optionally check syntax with:
 
   ```bash
-  node --check dist/assets/guild-content.js
-  node --check dist/assets/site.js
+  node --check olympus-viii.com/assets/guild-content.js
+  node --check olympus-viii.com/assets/site.js
   ```
 
 In your PR, include a short summary, how you checked the change, and screenshots for visible layout or styling changes. Mention any new image sources, known limitations, or follow-up work.
